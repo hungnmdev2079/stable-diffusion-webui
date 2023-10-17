@@ -23,12 +23,12 @@ restricted_opts = {
 
 options_templates.update(options_section(('saving-images', "Saving images/grids"), {
     "samples_save": OptionInfo(True, "Always save all generated images"),
-    "samples_format": OptionInfo('png', 'File format for images'),
+    "samples_format": OptionInfo('jpg', 'File format for images'),
     "samples_filename_pattern": OptionInfo("", "Images filename pattern", component_args=hide_dirs).link("wiki", "https://github.com/AUTOMATIC1111/stable-diffusion-webui/wiki/Custom-Images-Filename-Name-and-Subdirectory"),
     "save_images_add_number": OptionInfo(True, "Add number to filename when saving", component_args=hide_dirs),
 
     "grid_save": OptionInfo(True, "Always save all generated image grids"),
-    "grid_format": OptionInfo('png', 'File format for grids'),
+    "grid_format": OptionInfo('jpg', 'File format for grids'),
     "grid_extended_filename": OptionInfo(False, "Add extended info (seed, prompt) to filename when saving grid"),
     "grid_only_if_multiple": OptionInfo(True, "Do not save grids consisting of one picture"),
     "grid_prevent_empty_spots": OptionInfo(False, "Prevent empty spots in grid (when set to autodetect)"),
